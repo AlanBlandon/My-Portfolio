@@ -1,0 +1,342 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+h1,
+h2 {
+    font-family: 'Source Serif Pro';
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-family: 'Source Serif Pro';
+    font-size: 24px;
+}
+
+/* Colors */
+:root {
+    --light: #F8F8F8;
+    --dark: #000000;
+    --accent: #1CA645;
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Icon Pack */
+ion-icon {
+    font-size: 64px;
+    color: var(--light);
+}
+
+/* Nav Bar */
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(234, 234, 234, 1);
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(15px);
+    z-index: 10;
+    font-weight: bold;
+}
+
+nav a {
+    font-family: 'Source Serif Pro';
+    font-size: 24px;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+nav .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 7em;
+}
+
+.items ul {
+    display: flex;
+}
+
+.items li {
+    margin-left: 50px;
+}
+
+/* Hero Section */
+.intro {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--light);
+
+    /* Parallax Effect */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/20180707_184600.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro h1 {
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.intro span {
+    font-weight: 1000;
+}
+
+/* Down Arrow */
+.intro a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 64px;
+}
+
+/* Sections */
+.abt,
+.proj,
+.xp,
+.contact {
+    padding: 130px 360px;
+}
+
+/* About Section */
+.abt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abt h1,
+.abt h2 {
+    font-weight: 600;
+}
+
+.abt h1 {
+    margin-bottom: 32px;
+}
+
+.abt h2 {
+    margin-bottom: 16px;
+}
+
+/* Left Side */
+.abt .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.left-container .top {
+    margin-bottom: 64px;
+}
+
+.bottom .skills {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 16px;
+}
+
+.skills p {
+    font-size: 24px;
+}
+
+/* Right Side */
+.abt .img {
+    width: 350px;
+    height: 350px;
+    background-image: url('images/26176371.jpg');
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.5));
+    border-radius: 24px;
+}
+
+/* Projects Section */
+.proj h1 {
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+/* Photo Grid */
+.grid-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 64px;
+    margin-bottom: 64px;
+}
+
+.grid-container div {
+    width: 350px;
+    height: 250px;
+    background-color: gray;
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.5));
+    border-radius: 24px;
+    transition: 0.25s all ease-in-out;
+}
+
+/* Grid Animation */
+.grid-container .one:hover,
+.grid-container .two:hover,
+.grid-container .three:hover,
+.grid-container .four:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.grid-container .one {
+    background-image: url('images/project-images/tic-tac-toe.jpg');
+    background-position: center;
+    background-size: 120%;
+}
+
+.grid-container .two {
+    background-image: url('images/project-images/laptop.jpg');
+    background-position: center;
+    background-size: 130%;
+}
+
+.grid-container .three {
+    background-image: url('images/project-images/discord-bot.png');
+    background-position: center;
+    background-size: 130%;
+}
+
+.grid-container .four {
+    background-image: url('images/project-images/snake.jpg');
+    background-position: center;
+    background-size: 110%;
+}
+
+/* GitHub Link */
+.link span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--dark);
+}
+
+.link ion-icon {
+    font-size: 32px;
+    color: var(--accent);
+    padding-left: 10px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h1 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.contact .top {
+    margin-bottom: 64px;
+}
+
+/* Buttons */
+.btn a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--accent);
+    filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+    color: var(--light);
+    font-size: 24px;
+    margin-bottom: 64px;
+    font-family: 'Source Serif Pro';
+    font-weight: 300;
+}
+
+.contact .up {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 64px;
+}
+
+.contact ion-icon {
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 125px;
+}
+
+footer p {
+    font-weight: 300;
+    font-family: 'Source Serif Pro';
+    font-size: 20px;
+}
+
+footer p span {
+    font-weight: 600;
+}
+
+/* Icons */
+.socials {
+    display: flex;
+    align-content: center;
+}
+
+.socials a {
+    margin-left: 32px;
+}
+
+.socials ion-icon {
+    color: var(--dark);
+    font-size: 32px;
+}
+
+@media screen and (max-width: 1850px) {
+    .abt,
+    .proj,
+    .xp,
+    .contact {
+        padding: 128px 128px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .abt .img {
+        width: 250px;
+        height: 250px;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
