@@ -210,19 +210,19 @@ nav .items {
 }
 
 .grid-container .one {
-    background-image: url('images/project-images/tic-tac-toe.jpg');
+    background-image: url('images/project-images/tictactoe.jpg');
     background-position: center;
     background-size: 120%;
 }
 
 .grid-container .two {
-    background-image: url('images/project-images/laptop.jpg');
+    background-image: url('images/project-images/pc.jpg');
     background-position: center;
     background-size: 130%;
 }
 
 .grid-container .three {
-    background-image: url('images/project-images/discord-bot.png');
+    background-image: url('images/project-images/bot.png');
     background-position: center;
     background-size: 130%;
 }
